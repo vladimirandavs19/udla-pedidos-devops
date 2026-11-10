@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>Pedidos DevOps</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="/" aria-label="Pedidos DevOps, inicio">
+        <span class="brand-mark" aria-hidden="true">P<span>.</span></span>
+        <span>Pedidos <strong>DevOps</strong></span>
+      </a>
+      <div class="service-status" id="service-status" role="status">
+        <span class="status-dot"></span><span id="service-text">Comprobando servicio</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-heading">
+      <div>
+        <p class="eyebrow"><span></span> PANEL DE CONTROL</p>
+        <h1>Pedidos</h1>
+        <p class="subtitle">Un vistazo al estado de tus pedidos.</p>
+      </div>
+      <div class="heading-label"><span class="heading-label-dot"></span> Resumen general</div>
+    </div>
+
+    <section class="metrics" aria-label="Resumen de pedidos">
+      <article class="metric metric-total">
+        <div class="metric-top"><span>Pedidos totales</span><span class="metric-icon" aria-hidden="true">#</span></div>
+        <strong id="total-count">—</strong>
+        <p>Todos los pedidos</p>
+      </article>
+      <article class="metric metric-confirmed">
+        <div class="metric-top"><span>Confirmados</span><span class="metric-icon" aria-hidden="true">✓</span></div>
+        <strong id="confirmed-count">—</strong>
+        <p>Pedidos confirmados</p>
+      </article>
+      <article class="metric metric-pending">
+        <div class="metric-top"><span>Pendientes</span><span class="metric-icon" aria-hidden="true">◷</span></div>
+        <strong id="pending-count">—</strong>
+        <p>Esperando confirmación</p>
+      </article>
+    </section>
+
+    <section class="orders-section" aria-labelledby="orders-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LISTADO</p>
+          <h2 id="orders-title">Todos los pedidos</h2>
+          <p class="section-description">Detalle y estado de los pedidos registrados.</p>
+        </div>
+        <span class="order-count" id="order-count">— pedidos</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">ID</th><th scope="col">Cliente</th><th scope="col">Estado</th><th scope="col">Total</th></tr></thead>
+          <tbody id="orders-body"><tr><td class="table-message" colspan="4">Cargando pedidos...</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+    <footer><span>Pedidos DevOps</span><span>Panel de pedidos</span></footer>
+  </main>
+</body>
+</html>

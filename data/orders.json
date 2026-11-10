@@ -1,0 +1,5 @@
+[
+  { "id": "PED-001", "customer": "Ana Martínez", "status": "Confirmado", "total": 129.90 },
+  { "id": "PED-002", "customer": "Carlos Pérez", "status": "Pendiente", "total": 75.00 },
+  { "id": "PED-003", "customer": "Lucía Gómez", "status": "Confirmado", "total": 248.50 }
+]
